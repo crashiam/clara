@@ -110,11 +110,11 @@ $(window).scroll(function(){
         $('.title6').removeClass('muncul');
     }
 
-    if( wScroll > $('.card1').offset().top - 500 ) {
-        $('.card1').addClass('muncul'); 
-    } else {
-        $('.card1').removeClass('muncul');
-    }
+    // if( wScroll > $('.card1').offset().top - 500 ) {
+    //     $('.card1').addClass('muncul'); 
+    // } else {
+    //     $('.card1').removeClass('muncul');
+    // }
 
     if( wScroll > $('.card2').offset().top - 500 ) {
         $('.card2').addClass('muncul'); 
