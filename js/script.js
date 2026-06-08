@@ -303,3 +303,22 @@ setInterval(() => {
     document.getElementById("minutes").innerText = minutes;
     document.getElementById("seconds").innerText = seconds;
 }, 1000);
+
+
+let inv_message_1 = "";
+let inv_message_2 = "";
+const inv_none_1 = "Hello, you are invited!";
+const inv_none_2 = "Hi, there!";
+const query_string = window.location.search;
+const params = new URLSearchParams(query_string);
+if (params.has("inv")) {
+    const inv_person = params.get("inv");
+    inv_message_1 = `Hello, ${inv_person}, you are invited!`;
+    inv_message_2 = `Hi, ${inv_person}!`;
+} else {
+    inv_message_1 = inv_none_1;
+    inv_message_2 = inv_none_2;
+}
+
+document.getElementById("perinv1").textContent = inv_message_1;
+document.getElementById("perinv2").textContent = inv_message_2;
