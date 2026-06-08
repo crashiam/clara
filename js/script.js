@@ -259,14 +259,7 @@ function changeTimelinePosition () {
   timeline.value = percentagePosition;
 }
 
-// NAV JS
-// $(document).ready(function() {
-//     $('li').on('click', function(){
-//         $(this).siblings().removeClass('active');
-//         $(this).addClass('active');
-//     })
-// });
-
+// nav
 const navLi = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('section');
 
@@ -305,6 +298,7 @@ setInterval(() => {
 }, 1000);
 
 
+// invite
 let inv_message_1 = "";
 let inv_message_2 = "";
 const inv_none_1 = "Hello, you are invited!";
